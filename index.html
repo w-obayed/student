@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="" type="image/x-icon" />
+    <title>Result system</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-md-5 my-2">
+          <a href="./admin.html" class="btn btn-info mb-3 ms-3 shadow"
+            >Admin panel</a
+          >
+          <hr />
+          <div class="card shadow">
+            <div class="card-body">
+              <h2>Search Student Result</h2>
+              <hr />
+              <form id="search_result">
+                <div class="my-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Roll"
+                    name="roll"
+                  />
+                </div>
+                <div class="my-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Reg"
+                    name="reg"
+                  />
+                </div>
+                <div class="my-3">
+                  <button type="submit" class="btn btn-secondary">
+                    Submit
+                  </button>
+                  <button type="reset" class="btn btn-primary">Reset</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container my-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8 my-2">
+          <div class="result-show"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="src/data.js"></script>
+    <script src="src/functions.js"></script>
+    <script src="src/main.js"></script>
+    <script src="src/admin.js"></script>
+  </body>
+</html>
